@@ -1,6 +1,6 @@
-<app-face-snap [faceSnap]="mySnap"></app-face-snap>
-<app-face-snap [faceSnap]="my2Snap"></app-face-snap>
-<app-face-snap [faceSnap]="my3Snap"></app-face-snap>
+<app-face-snap [faceSnap]="mySnap" *ngIf="mySnap.snaps>100"></app-face-snap>
+<app-face-snap [faceSnap]="my2Snap" *ngIf="my2Snap.snaps>100"></app-face-snap>
+<app-face-snap [faceSnap]="my3Snap" *ngIf="my3Snap.snaps>100"></app-face-snap>
 
 
 

@@ -20,22 +20,6 @@ export class AppComponent implements OnInit {
     //   'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg'
     // );
 
-    // this.my2Snap = new FaceSnap(
-    //   'ben le mouton',
-    //   'Mon ami de toujours',
-    //   new Date(),
-    //   999,
-    //   'https://picsum.photos/200/300'
-    // );
-
-    // this.my3Snap = new FaceSnap(
-    //   'Actarus',
-    //   'Mon ami de toujours',
-    //   new Date(),
-    //   1006,
-    //   'https://picsum.photos/id/1/200/300'
-    // );
-
 
     this.mySnap = {
       title: 'Mokhtarus',
