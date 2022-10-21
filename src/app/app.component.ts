@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
       'Mokhtarus',
       'Mon ami de toujours',
       new Date(),
-      6,
+      600,
       'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg'
     );
 
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       'ben le mouton',
       'Mon ami de toujours',
       new Date(),
-      6,
+      999,
       'https://picsum.photos/200/300'
     );
 
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
       'Actarus',
       'Mon ami de toujours',
       new Date(),
-      6,
+      1006,
       'https://picsum.photos/id/1/200/300'
     );
   }
