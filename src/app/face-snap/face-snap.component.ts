@@ -8,16 +8,11 @@ import { FaceSnap } from '../models/face-snap.model';
   styleUrls: ['./face-snap.component.scss']
 })
 export class FaceSnapComponent implements OnInit {
-  // title!: string;
-  // description!: string;
-  // createdDate!: Date;
-  // imageUrl!: string;
-  //snaps!: number;
+  
   @Input() faceSnap!: FaceSnap;
 
   snapName: string = "snaps it !";
   btnColor: boolean = true;
-
 
   ngOnInit(): void {
     

@@ -3,7 +3,7 @@
 <p>Mis en ligne le  {{faceSnap.createdDate|date}}</p>
 <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
 <p>{{faceSnap.description}}</p>
-
+<p>{{faceSnap.location}}</p>
 <button (click)="onSnaps()" [style.color]="btnColor?'green':'red'">{{snapName}}</button>😙{{faceSnap.snaps}} 
 </div>
 
