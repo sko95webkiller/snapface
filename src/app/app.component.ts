@@ -35,9 +35,9 @@ export class AppComponent implements OnInit {
     this.mySnap = [
       {
         title: 'Mokhtarus',
-        description: 'Mon ami de toujours',
+        description: 'Mon ami de toujours et à  jamais',
         createdDate: new Date(),
-        snaps: 600,
+        snaps: 255,
         imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
         location: 'Paris'
       },
@@ -45,17 +45,27 @@ export class AppComponent implements OnInit {
         title: 'ben mon ami',
         description: 'chien de la casse',
         createdDate: new Date(),
-        snaps: 1200,
+        snaps: 150,
         imageUrl: 'https://picsum.photos/200/300',
       },
       {
         title: 'Aktarus',
         description: 'Mon ami de toujours',
         createdDate: new Date(),
-        snaps: 999,
+        snaps: 50,
         imageUrl: 'https://picsum.photos/id/200/300',
         location: 'New York'
+      },
+      {
+        title: 'le ciel ',
+        description: 'Comme vous ne l\'avez jamais vu !',
+        createdDate: new Date(),
+        snaps: 15,
+        imageUrl: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+        location: 'A DAKAR !'
       }
+      
+
     ]
 
 

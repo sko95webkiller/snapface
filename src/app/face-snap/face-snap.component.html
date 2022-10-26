@@ -1,10 +1,18 @@
-<div class="face-snap-card">
-<h2>{{faceSnap.title}}</h2>
-<p>Mis en ligne le  {{faceSnap.createdDate|date}}</p>
-<img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-<p>{{faceSnap.description}}</p>
-<p *ngIf="faceSnap.location">Photo prise à: {{faceSnap.location}}</p>
-<button (click)="onSnaps()" [style.color]="btnColor?'green':'red'">{{snapName}}</button>😙{{faceSnap.snaps}} 
+<div class="face-snap-card" style="color:purple" [ngStyle]="{backgroundColor:'#ddd',border:'solid 1px black' }">
+
+    <h2>{{faceSnap.title|titlecase}}</h2>
+    <p>Mis en ligne le {{faceSnap.createdDate|date:'d MMMM yyyy'}}</p>
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <p>{{faceSnap.description}}</p>
+    <p *ngIf="faceSnap.location">Photo prise à: {{faceSnap.location}}</p>
+    <button (click)="onSnaps()" [style.color]="btnColor?'green':'red'"
+        [ngClass]="{engras:snapName==='unsnaps it !'}">{{snapName}}</button>
+
+    <span [ngStyle]="{color:'rgb(0,'+faceSnap.snaps+',0)'}">😙{{faceSnap.snaps}}</span>
+    <p>nombre de pixels: {{ndp | number:'1.0-3'}}</p>
+    <p>pourcentage: {{0.432123 | percent:'1.0-3'}}</p>
+    <p>currency: {{2432344 | currency:'DOLLARS'}}</p>
+    <p>pourcentage: {{34341 | percent}}</p>
+    
+    
 </div>
-
-

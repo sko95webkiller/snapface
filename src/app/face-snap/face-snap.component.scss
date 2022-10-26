@@ -3,16 +3,55 @@
 //     height: 200px;
 // }
 
-.face-snap-card {
-    border: solid 1px black;
-    border-radius: 1px;
-    box-shadow: 3px 1px #ccc;
-    width: 50%;
-    padding: 10px;
+// .face-snap-card {
+//     border: solid 1px black;
+//     border-radius: 1px;
+//     box-shadow: 3px 1px #ccc;
+//     width: 50%;
+//     padding: 10px;
 
-    img {
-        width: 200px;
-        height: 200px;
+//     img {
+//         width: 200px;
+//         height: 200px;
 
-    }
+//     }
+// }
+.engras{
+  font-weight:bolder;
+  background-color: blue;
+  border-radius: 50px;
 }
+
+.face-snap-card {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: rgb(185, 35, 35) 4px 4px 20px;
+    img {
+      width: 100%;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+    }
+    button {
+      background-color: transparent;
+      box-sizing: border-box;
+      padding: 5px 10px;
+      border: none;
+      box-shadow: rgb(28, 146, 34) 3px 3px 7px;
+      margin-right: 20px;
+      outline: none;
+      font-size: 14px;
+      font-weight: 500;
+      &:active {
+        transform: translate(1px, 1px);
+        box-shadow: lightgray 0 0 5px;
+      }
+    }
+  }
