@@ -4,3 +4,23 @@ header {
     margin-bottom: 20px;
     padding: 10px;
   }
+
+  a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  
+  .active {
+    color: rgb(230, 50, 53);
+    text-decoration: dashed;
+  }
+
+  a:active {  
+    font-weight: bolder;
+    text-decoration: dashed;
+    color: blue;
+    }

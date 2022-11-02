@@ -1,0 +1,46 @@
+.landing-block {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+  
+  .landing-links {
+      display:flex;
+      justify-content: space-around;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .active {
+    color: rgb(230, 50, 53);
+    text-decoration: underline;
+  }
+
+  button {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: rgb(28, 146, 34) 3px 3px 7px;
+    margin-right: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    &:active {
+      transform: translate(1px, 1px);
+      box-shadow: lightgray 0 0 5px;
+    }
+  }
+  
+  

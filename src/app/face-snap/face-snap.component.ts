@@ -17,7 +17,7 @@ export class FaceSnapComponent implements OnInit {
   btnColor: boolean = true;
   ndp: number = 1346789357.123457654;
 
-  constructor(private faceSnapService: FaceSnapsService) {
+  constructor(public faceSnapService: FaceSnapsService) {
 
   }
   ngOnInit(): void {
@@ -27,18 +27,21 @@ export class FaceSnapComponent implements OnInit {
   onSnaps(): void {
     if (this.snapName === "snaps it !") {
       //this.faceSnap.snaps = this.faceSnap.snaps + 100;
-      try {
-        this.faceSnapService.snapFaceSnapById(this.faceSnap.id);
-      } catch(e) {
-        console.log(e);
-      }
+      //try {
+      this.faceSnapService.snapFaceSnapById(this.faceSnap.id, 'snap it !')
+      //this.faceSnapService.snapFaceSnapById(this.faceSnap.id);
+      //} catch(e) {
+      //console.log(e);
+      //}
       this.snapName = "unsnaps it !";
       this.btnColor = false;
     }
     else {
+      this.faceSnapService.snapFaceSnapById(this.faceSnap.id, 'unsnap it !')
+
       //this.faceSnap.snaps = this.faceSnap.snaps--;
       //console.log(this.faceSnap.snaps);
-      this.faceSnapService.unsnapFaceSnapById(this.faceSnap.id);
+      //this.faceSnapService.unsnapFaceSnapById(this.faceSnap.id);
       this.snapName = "snaps it !";
       this.btnColor = true;
     }
