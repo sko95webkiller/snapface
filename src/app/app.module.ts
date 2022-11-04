@@ -1,6 +1,5 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { FaceSnapComponent } from './face-snap/face-snap.component';
 import { registerLocaleData } from '@angular/common';
@@ -12,6 +11,8 @@ import { BidonComponent } from './bidon/bidon.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SingleFaceSnapComponent } from './single-face-snap/single-face-snap.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { SingleFaceSnapComponent } from './single-face-snap/single-face-snap.com
     HeaderComponent,
     BidonComponent,
     LandingPageComponent,
-    SingleFaceSnapComponent
+    SingleFaceSnapComponent,
   ],
   imports: [
     BrowserModule,

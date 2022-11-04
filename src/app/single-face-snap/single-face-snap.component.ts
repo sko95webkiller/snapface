@@ -22,7 +22,7 @@ export class SingleFaceSnapComponent implements OnInit {
     this.testParams=this.route.snapshot.params['id'];
     try{
       this.monSnap=this.service.getFaceSnapById(this.ID);
-      console.log(this.monSnap);
+      console.table(this.monSnap);
     }catch(e){console.log(e);}
   }
 
